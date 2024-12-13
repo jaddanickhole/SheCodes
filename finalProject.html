@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Autism</title>
+    <style>
+
+        .myDiv
+        {
+            text-align: center;
+            font-family:'Courier New', Courier, monospace;
+            color: black;
+            border: 2px solid #82CA92;
+            padding: 10px;
+            border-radius: 2px;
+        }
+        body
+        {
+            background: linear-gradient( rgb(182, 244, 146), rgb(51, 139, 147));
+        }
+        h1
+        {
+            font-family:'Courier New', Courier, monospace;
+        }
+        h2
+        {
+            font-weight: normal;
+        }
+        img
+        {
+          display: block;
+          margin: auto;
+        }
+
+        li
+        {
+            font-size: 18px;
+        }
+        button
+        {
+            display: block;
+            margin: 20px auto;
+            border: 3px solid #82CA92;           
+            background: #82CA92;
+            color:black;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 16px 24px;
+            border-radius: 30px;
+            box-shadow: rgba(111, 114, 211, 0.08) 0px 8px 8px 0;
+            transition: all 150ms ease-in-out; 
+        }
+
+        hr 
+        {
+          border-color: black;  
+        }
+
+        footer
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <em> autism </em>
+    </h1>
+    <div class="myDiv">
+        <h1> autism is a spectrum </h1>
+    </div>
+    <hr>
+
+    <h2>
+        <strong> autism spectrum disorder (ASD) </strong> is a <span style="color: rgb(5, 73, 82);"> neurological and developmental disorder </span> <br>
+        that affects how people interact with others, communicate, learn, and behave.
+    </h2>
+
+    <p>
+        <ul>
+            <li> Difficulty with communication and social interactions </li>
+            <li>Difficulty interpreting social rules and body language </li>
+            <li>Avoiding eye contact </li>
+            <li> Picking up on small details, smells, sounds, or patterns that other people don't </li>
+            <li> Wanting to plan things very carefully before doing them </li>
+            <li> Need for routine </li>
+            <li> Obsessive interest </li>
+        </ul> 
+    </p>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/706/original/20130110newsmicrogliamarker.jpg?1727659324"
+        width="300">
+        <a href="https://www.cdc.gov/autism/signs-symptoms/index.html" target="_blank">
+               <p>Read more from the CDC</p>
+        </a>
+        <button> <strong> click here </strong> </button>
+        
+
+        <script>
+            function clickHere()
+            {
+                let name = prompt("What is your name?");
+                let learn = prompt("Did you learn anything?");
+
+                if (learn === "yes")
+                    {
+                        alert("Thank you "+ name + " ! ");
+                    }
+                else
+                    {
+                        alert("check back later for new information.");
+                    }
+            }
+            let contactButton = document.querySelector("button");
+            contactButton.addEventListener("click",clickHere);
+        
+        </script>
+        <footer>
+            <p>This page was built by Jadda Norvel</p>
+        </footer>
+</body>
+
+</html>
